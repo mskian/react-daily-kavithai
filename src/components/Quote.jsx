@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback, useMemo } from "react";
-import { useLocation, useNavigate, Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import DOMPurify from "dompurify";
-import { ArrowBigRight, ArrowBigLeft, MessageCircleHeart, Music } from "lucide-react";
+import { ArrowBigRight, ArrowBigLeft, MessageCircleHeart } from "lucide-react";
 
 const CACHE = new Map();
 
@@ -111,11 +111,6 @@ const Quote = ({ setCurrentQuote }) => {
           </button>
         </div>
       )}
-      <div className="buttons is-centered">
-        <Link to="/music" className="button is-info mt-6 mb-5">
-          <Music />&nbsp;Kavithai Music
-        </Link>
-      </div>
     </>
   );
 };

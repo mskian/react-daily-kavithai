@@ -8,13 +8,12 @@ html, body {
 	font-family: "Catamaran", serif;
 }
 body {
-  background: linear-gradient(135deg, #ff7eb3, #ff758c);
-  min-height: 100vh;
+  background: #f5ebb4;
+  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
   font-family: "Catamaran", serif;
   font-weight: 600;
-  line-height: 1.618;
   -webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: grayscale;
 }
@@ -50,6 +49,7 @@ body {
   align-items: center;
   gap: 12px;
   margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .pagination button {
@@ -266,4 +266,24 @@ p {
   font-family: "Catamaran", serif;
   font-size: 0.8rem;
   color: white;
+}
+.navbar {
+  font-family: "Catamaran", serif;
+  background-color: #492549;
+}
+.navbar-item {
+  font-family: "Catamaran", serif;
+  font-weight: 600;
+  color: white;
+}
+.navbar-item:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar-burger {
+  color: yellowgreen;
+}
+.navbar-menu {
+  background-color: #492549;
 }

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 import AudioPlayer from "../components/AudioPlayer";
 import { Music, Home } from "lucide-react";
 
@@ -17,6 +18,7 @@ const Musics = () => {
  
   return (
     <>
+    <Navbar />
     <section className="section full-height">
     <div className="container">
     <div className="columns is-centered">
@@ -28,8 +30,8 @@ const Musics = () => {
         </div>
       </div>
       <div className="buttons is-centered">
-        <Link to="/" className="button is-warning mt-4 mb-4">
-          <Home />&nbsp;Back to Home
+        <Link to="/" className="button is-warning mt-4 mb-4 is-flex is-align-items-center">
+          <Home size={16} className="mr-2" /> Back to Home
       </Link>
       </div>
       </div>
