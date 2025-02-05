@@ -7,7 +7,7 @@ const ShareBar = ({ quote }) => {
   const [copied, setCopied] = useState(false);
 
   const shareLinks = [
-    { name: "WhatsApp", url: `https://wa.me/?text=${encodeURIComponent(quote)}`, icon: <Phone size={16} />, className: "whatsapp" },
+    { name: "WhatsApp", url: `https://api.whatsapp.com/send/?text=${encodeURIComponent(quote)}`, icon: <Phone size={16} />, className: "whatsapp" },
     { name: "Telegram", url: `https://t.me/share/url?url=${encodeURIComponent(quote)}`, icon: <Send size={16} />, className: "telegram" },
   ];
 

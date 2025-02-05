@@ -67,7 +67,7 @@ const Quote = ({ setCurrentQuote }) => {
         <button className="button is-small is-rounded" onClick={prevQuote} disabled={index === 0}>
           <ArrowBigLeft />
         </button>
-        <span className="has-text-dark">{index + 1} / {quotes.length}</span>
+        <span className="has-text-dark">{index + 1} of {quotes.length}</span>
         <button className="button is-small is-rounded" onClick={nextQuote} disabled={index === quotes.length - 1}>
           <ArrowBigRight />
         </button>
