@@ -33,8 +33,15 @@ body {
 
 .button {
   font-family: "Catamaran", serif;
-  font-weight: 700;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .pagination {
   font-family: "Catamaran", serif;
   font-weight: 700;
@@ -42,7 +49,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .pagination button {
@@ -189,4 +196,74 @@ p {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+.audio-player {
+  width: 100%;
+  max-width: 550px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #80223c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.audio-title {
+  font-family: "Catamaran", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(255, 242, 242);
+  margin-bottom: 12px;
+}
+
+.play-button {
+  background: #db788e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.play-button:hover {
+  background: #db788e;
+}
+
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background: #db788e;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: rgb(22, 2, 17);
+  transition: width 0.2s ease-in-out;
+}
+
+.duration-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  color: white;
+}
+
+.current-time,
+.total-duration {
+  font-family: "Catamaran", serif;
+  font-size: 0.8rem;
+  color: white;
 }
