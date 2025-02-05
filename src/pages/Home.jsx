@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
     <Navbar />
-    <section className="section full-height">
+    <section className="section mt-6">
       <div className="container">
         <Quote setCurrentQuote={setCurrentQuote} />
         <ShareBar quote={currentQuote} />

@@ -3,7 +3,7 @@ import { AlertTriangle } from "lucide-react";
 
 const ErrorPage = () => {
   return (
-    <section className="section has-text-centered">
+    <section className="section has-text-centered mt-6">
       <div className="container">
         <AlertTriangle size={60} className="has-text-link mb-4" />
         <h1 className="title has-text-dark">404 - Page Not Found</h1>

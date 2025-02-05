@@ -19,7 +19,7 @@ const Musics = () => {
   return (
     <>
     <Navbar />
-    <section className="section full-height">
+    <section className="section mt-6">
     <div className="container">
     <div className="columns is-centered">
     <div className="column is-half">
