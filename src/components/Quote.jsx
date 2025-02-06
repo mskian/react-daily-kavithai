@@ -22,21 +22,14 @@ const Quote = ({ setCurrentQuote }) => {
 
   const fetchQuotes = useCallback(async () => {
     try {
-      if (CACHE.has("quotes")) {
-        setQuotes(CACHE.get("quotes"));
-        return;
-      }
-
-      const res = await fetch("/kavithai.md", { cache: "force-cache" });
+      const res = await fetch(`/kavithai.md?${Date.now()}`, { cache: "no-store" });
       if (!res.ok) throw new Error("Failed to fetch quotes");
 
       const text = await res.text();
       const rawQuotes = parseQuotes(text);
-
       if (rawQuotes.length === 0) throw new Error("No quotes available.");
-
       CACHE.set("quotes", rawQuotes);
-      setQuotes(rawQuotes);
+      setQuotes([...rawQuotes]);
     } catch (err) {
       setError(err.message);
       setQuotes([]);
@@ -44,7 +37,11 @@ const Quote = ({ setCurrentQuote }) => {
   }, []);
 
   useEffect(() => {
-    fetchQuotes();
+    if (CACHE.has("quotes")) {
+      setQuotes([...CACHE.get("quotes")]);
+    } else {
+      fetchQuotes();
+    }
   }, [fetchQuotes]);
 
   useEffect(() => {
