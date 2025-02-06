@@ -25,11 +25,11 @@ const Navbar = () => {
 
       <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
         <div className="navbar-end">
-          <Link className="navbar-item is-flex is-align-items-center" to="/">
-            <Home size={20} className="mr-2" /> Home
+          <Link className="navbar-item is-flex is-align-items-center is-gapless" to="/">
+            <Home size={16} className="me-1 mr-1" />Home
           </Link>
-          <Link className="navbar-item is-flex is-align-items-center" to="/music">
-            <Music size={20} className="mr-2" /> Music
+          <Link className="navbar-item is-flex is-align-items-center is-gapless" to="/music">
+            <Music size={16} className="me-1 mr-1" />Music
           </Link>
         </div>
       </div>
