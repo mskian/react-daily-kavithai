@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bulma": "^1.0.3",
+    "bulma": "^1.0.4",
     "dompurify": "^3.2.5",
     "lucide-react": "^0.488.0",
     "react": "^19.1.0",
