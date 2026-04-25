@@ -4184,3 +4184,10 @@ burden மாதிரி இருக்கும்
 உன் அன்பு loud இல்லை
 ஆனா அது deep-ஆ
 என் வாழ்க்கையை நிரப்புகிறது
+
+Communication மட்டும் போதாது
+understanding தான்
+connection strong பண்ணும்
+
+உன்னிடம் பேசாத ஒரு நாள்
+முழு நாளே incomplete-ஆ தோன்றுகிறது
