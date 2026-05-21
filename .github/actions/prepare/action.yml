@@ -17,5 +17,5 @@ runs:
 
     - name: Install dependencies
       run: |
-        pnpm install --unsafe-perm=true --ignore-scripts=false
+        pnpm install
       shell: bash
