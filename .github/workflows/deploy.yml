@@ -14,11 +14,6 @@ jobs:
 
       - uses: ./.github/actions/prepare
 
-      - name: Approve pnpm builds
-        run: |
-          pnpm approve-builds
-        shell: bash
-
       - name: Use pnpm to build site
         run: pnpm build
 
