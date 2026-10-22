@@ -12,7 +12,7 @@
   "dependencies": {
     "bulma": "^1.0.4",
     "dompurify": "^3.4.17",
-    "lucide-react": "^1.57.0",
+    "lucide-react": "^1.61.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.4"
